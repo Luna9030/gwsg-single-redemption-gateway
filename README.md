@@ -1,0 +1,1 @@
+# gwsg-single-redemption-gateway

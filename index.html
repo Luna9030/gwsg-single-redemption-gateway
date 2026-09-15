@@ -17,7 +17,7 @@
 
 <meta
   name="description"
-  content="Redeem your Grow Well SG token of appreciation and explore more 10-minute activities."
+  content="Redeem your Grow Well SG token of appreciation."
 >
 
 <title>Grow Well SG – Token of Appreciation</title>
@@ -173,7 +173,7 @@ body::after {
 
 .hero {
 
-  max-width:850px;
+  max-width:880px;
 
   margin:
     0 auto
@@ -253,10 +253,10 @@ h1 {
 
 .subtitle {
 
-  max-width:720px;
+  max-width:760px;
 
   margin:
-    18px auto 0;
+    20px auto 0;
 
   color:var(--muted);
 
@@ -269,25 +269,39 @@ h1 {
 
   font-weight:700;
 
-  line-height:1.5;
+  line-height:1.55;
+}
+
+
+.subtitle a {
+
+  color:#008f8b;
+
+  font-weight:900;
+
+  text-decoration:underline;
+
+  text-decoration-thickness:2px;
+
+  text-underline-offset:3px;
+}
+
+
+.subtitle a:hover {
+
+  color:#006f6c;
 }
 
 
 /* ==========================================
-   ACTION CARDS
+   SINGLE REDEMPTION CARD
 ========================================== */
 
 .actions {
 
-  display:grid;
+  display:flex;
 
-  grid-template-columns:
-    repeat(
-      2,
-      minmax(0,1fr)
-    );
-
-  gap:20px;
+  justify-content:center;
 
   max-width:900px;
 
@@ -305,15 +319,17 @@ h1 {
 
   display:grid;
 
-  min-height:245px;
+  width:min(100%,590px);
+
+  min-height:270px;
 
   grid-template-rows:
     auto 1fr auto;
 
-  gap:16px;
+  gap:18px;
 
   padding:
-    30px 28px 24px;
+    32px 30px 26px;
 
   overflow:hidden;
 
@@ -429,30 +445,6 @@ h1 {
 }
 
 
-.redeem {
-
-  --accent:var(--pink);
-
-  --soft:
-    rgba(244,22,62,.07);
-
-  --strong:
-    rgba(244,22,62,.16);
-}
-
-
-.explore {
-
-  --accent:var(--teal);
-
-  --soft:
-    rgba(0,170,166,.07);
-
-  --strong:
-    rgba(0,170,166,.17);
-}
-
-
 .icon-wrap {
 
   display:grid;
@@ -486,9 +478,9 @@ h1 {
 
   font-size:
     clamp(
-      1.75rem,
-      3vw,
-      2.35rem
+      1.9rem,
+      3.5vw,
+      2.6rem
     );
 
   font-weight:900;
@@ -502,11 +494,12 @@ h1 {
 .card-copy {
 
   margin:
-    10px 0 0;
+    12px 0 0;
 
   color:var(--muted);
 
-  font-size:1rem;
+  font-size:
+    1.05rem;
 
   font-weight:700;
 
@@ -531,12 +524,13 @@ h1 {
 
 .cta {
 
-  color:var(--accent);
+  color:var(--pink);
 
   font-family:
     var(--rounded);
 
-  font-size:.9rem;
+  font-size:
+    .95rem;
 
   font-weight:900;
 }
@@ -546,8 +540,8 @@ h1 {
 
   display:inline-grid;
 
-  width:38px;
-  height:38px;
+  width:40px;
+  height:40px;
 
   place-items:center;
 
@@ -556,15 +550,15 @@ h1 {
   color:#ffffff;
 
   background:
-    var(--accent);
+    var(--pink);
 
-  font-size:1.1rem;
+  font-size:1.15rem;
 
   font-weight:900;
 
   box-shadow:
     0 8px 18px
-    var(--strong);
+    rgba(244,22,62,.16);
 
   transition:
     transform .18s ease;
@@ -579,57 +573,17 @@ h1 {
 
 
 /* ==========================================
-   BOTTOM MESSAGE
-========================================== */
-
-.bottom-note {
-
-  max-width:740px;
-
-  margin:
-    clamp(34px,5vw,52px)
-    auto 0;
-
-  padding:20px 24px;
-
-  border:
-    1px solid
-    rgba(48,48,54,.08);
-
-  border-radius:22px;
-
-  color:var(--muted);
-
-  background:
-    rgba(255,255,255,.78);
-
-  font-size:.96rem;
-
-  font-weight:700;
-
-  line-height:1.55;
-
-  text-align:center;
-
-  box-shadow:
-    0 10px 30px
-    rgba(48,48,54,.05);
-}
-
-
-.bottom-note strong {
-
-  color:var(--ink);
-}
-
-
-/* ==========================================
    FOOTER
 ========================================== */
 
 .footer {
 
-  margin-top:38px;
+  margin-top:
+    clamp(
+      38px,
+      6vw,
+      60px
+    );
 
   padding-top:18px;
 
@@ -675,20 +629,12 @@ h1 {
   }
 
 
-  .actions {
-
-    grid-template-columns:1fr;
-
-    gap:14px;
-  }
-
-
   .action-card {
 
-    min-height:210px;
+    min-height:235px;
 
     padding:
-      24px 22px 20px;
+      25px 22px 21px;
 
     border-radius:27px;
   }
@@ -707,12 +653,6 @@ h1 {
 
     width:54px;
     height:54px;
-  }
-
-
-  .bottom-note {
-
-    margin-top:28px;
   }
 
 }
@@ -746,8 +686,6 @@ h1 {
 
 <!-- ==========================================
      GROW WELL SG LOGO
-     Embedded in this file.
-     No separate image upload is required.
 ========================================== -->
 
 <img
@@ -768,8 +706,19 @@ h1 {
 
 
 <p class="subtitle">
-  Enjoy your gift, then discover more quick and simple
-  ways to stay healthy with Grow Well SG.
+
+  Enjoy your gift, then
+
+  <a
+    href="https://go.gov.sg/grow-well-sg-main-page"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    discover more 10 minutes activities
+  </a>
+
+  to stay healthy with Grow Well SG.
+
 </p>
 
 
@@ -779,16 +728,16 @@ h1 {
 
 <section
   class="actions"
-  aria-label="Grow Well SG actions"
+  aria-label="Redeem your token of appreciation"
 >
 
 
 <!-- ==========================================
-     REDEEM TOKEN
+     SINGLE REDEMPTION BOX
 ========================================== -->
 
 <a
-  class="action-card redeem"
+  class="action-card"
   href="https://go.gov.sg/e-book"
   target="_blank"
   rel="noopener noreferrer"
@@ -864,6 +813,7 @@ h1 {
 
 <div>
 
+
 <h2 class="card-title">
   Redeem your token of appreciation
 </h2>
@@ -873,10 +823,12 @@ h1 {
   Tap here to receive your Grow Well SG e-book.
 </p>
 
+
 </div>
 
 
 <div class="card-footer">
+
 
 <span class="cta">
   Redeem now
@@ -890,118 +842,6 @@ h1 {
   ↗
 </span>
 
-</div>
-
-
-</a>
-
-
-
-<!-- ==========================================
-     EXPLORE MORE ACTIVITIES
-========================================== -->
-
-<a
-  class="action-card explore"
-  href="https://go.gov.sg/grow-well-sg-main-page"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Explore more 10-minute activities to stay healthy"
->
-
-
-<div
-  class="icon-wrap"
-  aria-hidden="true"
->
-
-
-<svg
-  class="icon"
-  viewBox="0 0 96 96"
->
-
-
-<circle
-  cx="48"
-  cy="48"
-  r="37"
-  fill="#dff5f3"
-/>
-
-
-<path
-  d="M48 20
-     C39 8 20 12 20 31
-     C20 49 48 71 48 71
-     C48 71 76 49 76 31
-     C76 12 57 8 48 20Z"
-  fill="#f4163e"
-/>
-
-
-<path
-  d="M32 45h10l5-12 7 25 5-13h7"
-  fill="none"
-  stroke="#ffffff"
-  stroke-width="5"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-/>
-
-
-<circle
-  cx="73"
-  cy="70"
-  r="15"
-  fill="#f4cc09"
-/>
-
-
-<path
-  d="M73 62v8l6 4"
-  fill="none"
-  stroke="#303036"
-  stroke-width="3.5"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-/>
-
-
-</svg>
-
-
-</div>
-
-
-<div>
-
-<h2 class="card-title">
-  Explore more 10-minute activities
-</h2>
-
-
-<p class="card-copy">
-  Discover simple activities you and your family can do
-  to stay healthy together.
-</p>
-
-</div>
-
-
-<div class="card-footer">
-
-<span class="cta">
-  Explore Grow Well SG
-</span>
-
-
-<span
-  class="arrow"
-  aria-hidden="true"
->
-  ↗
-</span>
 
 </div>
 
@@ -1010,19 +850,6 @@ h1 {
 
 
 </section>
-
-
-
-<div class="bottom-note">
-
-<strong>
-  Got another 10 minutes?
-</strong>
-
-Explore more Grow Well SG activities and discover
-small ways to build healthier habits together.
-
-</div>
 
 
 
